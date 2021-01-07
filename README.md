@@ -3,7 +3,7 @@
 Para publicar via MQTT é necessário ter os dados como o modelo de configuração abaixo:
 
 ```
-host: mqtts:\\test-mqtt.siot.konztec.com:8883
+host: mqtts://test-mqtt.siot.konztec.com:8883
 username: guest
 password: 123
 ```
@@ -40,7 +40,7 @@ Poderá ser enviado um JSON contendo vários sensores no payload:
 
 <strong>Topic</strong>
 ```
-/sensors
+/siot/s/{maquina_id}
 ```
 <strong>Payload</strong>
 ```
@@ -69,7 +69,7 @@ Onde os parâmetros `{maquina_id}`, `{sensor_id}`, `{signal_id}` são de acordo 
 ##### <strong>Exemplo</strong>:
 
 ```
-topic: /sensors
+topic: /siot/s/iot_2
 payload: {
     "idMachine": "iot_2",
     "date": "2020-03-20T12:05:20.000Z",
