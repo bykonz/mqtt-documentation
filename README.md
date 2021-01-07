@@ -1,11 +1,13 @@
 # MQTT S.IoT - Documentação
 
-Para publicar via MQTT é necessário ter os dados como o modelo de configuração abaixo:
+Para publicar via MQTT é necessário ter os dados como o modelo de configuração abaixo.
+* Para 'username' utilize o ID da máquina cadastro no SIOT.
+* Para 'password' utilize o token de integração da máquina gerado no SIOT.
 
 ```
 host: mqtts://test-mqtt.siot.konztec.com:8883
-username: guest
-password: 123
+username: iot
+password: geeM/H1MvkyaYFcC/hT47w==
 ```
 
 
